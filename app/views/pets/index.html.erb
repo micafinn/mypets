@@ -17,7 +17,7 @@
       <tr>
         <td><%= pet.name %></td>
         <td><%= pet.description %></td>
-        <td><%= pet.image %></td>
+        <td><%= image_tag pet.image.thumb.url if pet.image.present? %></td>
         <td><%= link_to 'Show', pet %></td>
         <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
         <td><%= link_to 'Destroy', pet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
