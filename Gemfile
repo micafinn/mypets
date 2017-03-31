@@ -34,7 +34,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+#Required for image uploads
 gem 'carrierwave', '~> 1.0'
+#Required for image uploads, carrierwave is dependent on it
 gem 'mini_magick', '~> 4.7'
 
 group :development, :test do
